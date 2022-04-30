@@ -19,5 +19,8 @@
   "homepage": "https://github.com/denizayjs/NatoursLandingPage#readme",
   "devDependencies": {
     "node-sass": "^7.0.1"
+  },
+  "dependencies": {
+    "gitignore": "^0.7.0"
   }
 }
