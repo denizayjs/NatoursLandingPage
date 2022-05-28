@@ -449,6 +449,14 @@ body {
     content: "";
     clear: both;
     display: table; }
+  @media (max-width: 56.25em) {
+    .story {
+      width: 100%;
+      padding: 4rem;
+      padding-left: 7rem; } }
+  @media (max-width: 37.5em) {
+    .story {
+      transform: skewX(0deg); } }
   .story__shape {
     overflow: hidden;
     width: 15rem;
@@ -460,12 +468,18 @@ body {
     clip-path: circle(50% at 50% 50%);
     transform: translateX(-3rem) skewX(12deg) scale(1);
     position: relative; }
+    @media (max-width: 37.5em) {
+      .story__shape {
+        transform: translateX(-3rem) skewX(0deg); } }
   .story__img {
     height: 100%;
     transform: translateX(-4rem) scale(1.4);
     transition: all 0.5s; }
   .story__text {
     transform: skewX(12deg); }
+    @media (max-width: 37.5em) {
+      .story__text {
+        transform: skewX(0deg); } }
   .story__caption {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
